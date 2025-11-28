@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0; url=/crest-volleyball-tournament/" />
+    <meta name="robots" content="noindex" />
+    <title>Redirecting...</title>
+    <script>
+      // Redirect unknown routes on GitHub Pages to the hash-based route
+      (function () {
+        var repoBase = '/crest-volleyball-tournament';
+        var path = window.location.pathname + window.location.search + window.location.hash;
+        // If path already contains the repo base, strip it
+        if (path.indexOf(repoBase) === 0) {
+          path = path.slice(repoBase.length);
+        }
+        // Ensure leading slash
+        if (path.charAt(0) !== '/') path = '/' + path;
+        // Redirect to the repo base with hash preserving the original path
+        var target = repoBase + '/#' + path;
+        window.location.replace(target);
+      })();
+    </script>
+  </head>
+  <body>
+    Redirecting to the app...
+  </body>
+</html>

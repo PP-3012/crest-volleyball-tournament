@@ -7,7 +7,7 @@ import React, {
   useCallback,
 } from "react";
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
   Link,
@@ -2286,7 +2286,7 @@ const HomePage = () => {
 // Main App
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <nav className="bg-gray-900 border-b border-purple-500 p-4">
         <div className="container mx-auto flex justify-between items-center">
           <Link
@@ -2341,6 +2341,6 @@ export default function App() {
           </p>
         </div>
       </footer>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
